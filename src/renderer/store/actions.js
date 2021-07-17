@@ -1,4 +1,7 @@
 export default {
+  initialResults({ commit }) {
+    commit('addInitialResults');
+  },
   setResult({ commit }, payload) {
     commit('setResult', payload);
   },

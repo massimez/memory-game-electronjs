@@ -26,31 +26,4 @@ export default () => ({
   // потом можно выбирать количество карточек для игры
   lenght: 6,
   lenghtLimit: 6,
-  // результаты игры в секундах (надо где-то сохранять из, пусть пока будут тестовые)
-  results: [
-    {
-      name: 'Obi-Wan Kenobi',
-      result: 534,
-    },
-    {
-      name: 'Daniil Novikov',
-      result: 153,
-    },
-    {
-      name: 'Chewbacca',
-      result: 496,
-    },
-    {
-      name: 'Yoda',
-      result: 325,
-    },
-    {
-      name: 'Darth Vader',
-      result: 187,
-    },
-    {
-      name: 'Luke Skywalker',
-      result: 255,
-    },
-  ],
 });

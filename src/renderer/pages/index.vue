@@ -54,6 +54,7 @@ export default {
     };
   },
   mounted() {
+    if (!localStorage.getItem('results')) this.$store.dispatch('initialResults');
     this.fetchResults();
   },
   computed: {
@@ -71,7 +72,7 @@ export default {
     fetchResults() {
       const data = localStorage.getItem('results');
       if (!data) this.results = [];
-      this.results = JSON.parse(data);
+      this.results = JSON.parse(data).slice(0, 7);
     },
   },
 };
